@@ -139,6 +139,7 @@ const styles = {
   sectionHeader: { textAlign: 'center', marginBottom: '4rem' },
   sectionTitle: { fontSize: '2.5rem', fontWeight: 'bold' },
   sectionSubtitle: { fontSize: '1.25rem', color: '#d1d5db' },
+  features: { paddingBottom: '5rem' },
   featuresGrid: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(250px,1fr))', gap: '2rem' },
   featureCard: { padding: '2rem', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)' },
   featureIcon: {
