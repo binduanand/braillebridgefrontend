@@ -134,7 +134,7 @@ const styles = {
   floatingCard1: { width: '160px', height: '160px', backgroundColor: 'rgba(168,85,247,0.2)', left: '25%', top: 0 },
   floatingCard2: { width: '120px', height: '120px', backgroundColor: 'rgba(236,72,153,0.2)', right: '25%', top: '40px', animationDelay: '1s' },
   floatingCard3: { width: '140px', height: '140px', backgroundColor: 'rgba(59,130,246,0.2)', left: '33%', bottom: 0, animationDelay: '2s' },
-  features: { padding: '5rem 2rem' },
+  
   sectionContent: { maxWidth: '1280px', margin: '0 auto' },
   sectionHeader: { textAlign: 'center', marginBottom: '4rem' },
   sectionTitle: { fontSize: '2.5rem', fontWeight: 'bold' },
