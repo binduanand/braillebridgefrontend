@@ -102,7 +102,7 @@ const styles = {
     color: '#fff',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
   },
-  hero: { paddingTop: '8rem', paddingBottom: '5rem', textAlign: 'center', position: 'relative' },
+  hero: { paddingTop: '8rem', textAlign: 'center', position: 'relative' },
   heroContent: { maxWidth: '1280px', margin: '0 auto', padding: '0 2rem' },
   heroTitle: { fontSize: '3rem', fontWeight: 'bold', lineHeight: '1.2', marginBottom: '1.5rem' },
   heroTitleGradient: {
