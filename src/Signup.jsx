@@ -436,7 +436,7 @@ export default function SignUpPage({ setIsLoggedIn }) {
 
           <div style={styles.footer}>
             <p style={styles.footerText}>
-              Already have an account? <Link to="/signin" style={styles.footerLink}>Sign In</Link>
+              Already have an account? <Link to="/login" style={styles.footerLink}>Sign In</Link>
             </p>
           </div>
         </div>
