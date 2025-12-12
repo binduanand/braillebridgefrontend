@@ -422,7 +422,7 @@ export default function Braille() {
                   id="fileInput"
                   type="file"
                   style={styles.fileInput}
-                  accept=".txt,.brf,.brl"
+                  accept=".txt,.pdf,.docx,.doc"
                   onChange={handleFileUpload}
                   disabled={loading}
                 />
