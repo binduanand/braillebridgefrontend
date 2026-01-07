@@ -196,16 +196,16 @@ export default function Dashboard() {
                 <table style={{ width: "100%", borderCollapse: "collapse" }}>
                   <thead>
                     <tr>
-                      <th style={{ textAlign: "left", padding: "1rem" }}>
+                      <th style={{ textAlign: "center", padding: "1rem" }}>
                         File Name
                       </th>
-                      <th style={{ textAlign: "left", padding: "1rem" }}>
+                      <th style={{ textAlign: "center", padding: "1rem" }}>
                         Date
                       </th>
-                      <th style={{ textAlign: "left", padding: "1rem" }}>
+                      <th style={{ textAlign: "center", padding: "1rem" }}>
                         Converted Files
                       </th>
-                      <th style={{ textAlign: "left", padding: "1rem" }}>
+                      <th style={{ textAlign: "center", padding: "1rem" }}>
                         Actions
                       </th>
                     </tr>
