@@ -80,6 +80,36 @@ export default function Dashboard() {
   };
 
   
+ const handleDeleteFile = async (fileId) => {
+  if (!window.confirm("Are you sure you want to delete this file?")) return;
+
+  try {
+    const response = await fetch(
+      `https://braillebridgebackend-9zof.onrender.com/api/files/${fileId}`,
+      {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      console.error("Delete failed:", data);
+      throw new Error(data.message || "Failed to delete file");
+    }
+
+    
+    alert("File deleted successfully!");
+    setFiles((prevFiles) => prevFiles.filter((file) => file._id !== fileId));
+  } catch (error) {
+    console.error("Error deleting file:", error);
+    alert("Failed to delete file: " + error.message);
+  }
+};
 
 
   const styles = {
@@ -251,6 +281,14 @@ export default function Dashboard() {
                           ) : (
                             <span style={{ color: "#9ca3af" }}>Not converted</span>
                           )}
+                        </td>
+                        <td style={{ padding: "1rem" }}>
+                          <button
+                            style={styles.iconButton}
+                            onClick={() => handleDeleteFile(file._id)}
+                          >
+                            🗑️
+                          </button>
                         </td>
                       </tr>
                     ))}
